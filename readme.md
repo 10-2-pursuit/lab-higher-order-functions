@@ -18,7 +18,7 @@ In this lab, you'll practice writing functions that have a callback as one of th
 
 ## Instructions
 
-You'll complete the functions inside of the `index.js` file. For each function, you will have the majority of the code already there. You should not change any of the existing code and instead just add the one to three lines, where specified, that will use the callback.
+You'll complete the functions inside of the `index.js` file. For each function, you will have the majority of the code already there. You should not change any of the existing code and instead just add the one to three lines, where pecified, that will use the callback.
 
 Instructions and examples can be found in both the `index.js` file and the test files.
 
