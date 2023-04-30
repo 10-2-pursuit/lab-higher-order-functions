@@ -14,8 +14,12 @@
  */
 function find(array, callback) {
   for (let element of array) {
-    // Write your code here.
-  }
+    let foundElement = callback(element);
+    if (foundElement == true) {
+      return element;
+    }
+  } 
+  return undefined;
 }
 
 /**
@@ -35,7 +39,10 @@ function find(array, callback) {
 function filter(array, callback) {
   const result = [];
   for (let element of array) {
-    // Write your code here.
+    let foundElement = callback(element);
+    if (foundElement == true) {
+      result.push(element);
+    }
   }
   return result;
 }
@@ -57,7 +64,8 @@ function filter(array, callback) {
 function map(array, callback) {
   const result = [];
   for (let element of array) {
-    // Write your code here.
+    let newElement = callback(element);
+    result.push(newElement);
   }
   return result;
 }
@@ -77,9 +85,9 @@ function map(array, callback) {
  */
 function forEach(array, callback) {
   for (let i = 0; i < array.length; i++) {
-    // Write your code here.
+    let newElement = callback(array[i], i, array)
   }
-}
+} 
 
 // Do not change the code below this line.
 module.exports = { find, filter, map, forEach };
